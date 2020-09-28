@@ -20,11 +20,13 @@ body {
     background-color: azure;
     margin-top: 70px;
 }
-.main-section{
 
-}
 .header-section{
     font-size: large;
     font-style: oblique;
+}
+
+hr{
+    padding-bottom: 10px;
 }
 
