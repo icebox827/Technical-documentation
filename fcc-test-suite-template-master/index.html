@@ -8,20 +8,25 @@
   </head>
 
   <body>
-    <!--Navigation bar-->
-    <nav class="navbar navbar-expand-sm bg-dark fixed-top" id="navbar">
-      <header>Technical Documentation</header>
-          <a class="nav-link" href="#engine">Engine</a>
-          <a class="nav-link" href="#electrical_system">Electrical System</a>
-          <a class="nav-link" href="#cooling_system">Cooling System</a>
-          <a class="nav-link" href="#braking_system">Braking System</a>
-          <a class="nav-link" href="#steering_suspension">Steering & Suspension</a>
-        </li>
-      </ul>
-    </nav>
-  
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-3">
+               <!--Navigation bar-->
+            <nav class="navbar nav flex-column navbar-expand-sm bg-dark position-fixed" id="navbar">
+              <header id="navHeader">Technical Documentation</header>
+                  <a class="nav-link" href="#engine">Engine</a><hr>
+                  <a class="nav-link" href="#electrical_system">Electrical System</a><hr>
+                  <a class="nav-link" href="#cooling_system">Cooling System</a><hr>
+                  <a class="nav-link" href="#braking_system">Braking System</a><hr>
+                  <a class="nav-link" href="#steering_suspension">Steering & Suspension</a><hr>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-9">
+              <!--Main Section-->
   <main id="main-doc">
-    <section class="main-section" id="engine">
+    <section id="engine" class="main-section">
       <header class="header-section"><b>Engine</b></header>
       <p>The heart and soul of your vehicle is the internal combustion engine.</p>
       <p>The engine is made up of the following parts (among others):</p>
@@ -33,7 +38,7 @@
       <p>The <code>enginePower()</code> method calculates engine under different conditions.</p>
     </section>
     <hr>
-    <section class="main-section" id="electrical_system">
+    <section id="electrical_system" class="main-section">
       <header class="header-section"><b>Electrical System</b></header>
       <p>The electrical system starts and keeps all your cars components running.</p>
       <p>The electrical system is made up of the following parts:</p>
@@ -45,7 +50,7 @@
       <p>The <code>electricalFlow()</code> method estimates efficiency of electrical flow.</p>
     </section>
     <hr>
-    <section class="main-section" id="cooling_system">
+    <section id="cooling_system" class="main-section" >
       <header class="header-section"><b>Cooling System</b></header>
       <p>The cooling system is responsible for helping the engine keep cool.</p>
       <p>The cooling system is made up of the following parts:</p>
@@ -57,7 +62,7 @@
       <p>The <code>coolingEfficiency()</code> method estimates the efficiency of your cooling system.</p>
     </section>
     <hr>
-    <section class="main-section" id="braking_system">
+    <section id="braking_system" class="main-section">
       <header class="header-section"><b>Braking System</b></header>
       <p>Found on all four wheels, your brakes are one of the most important safety systems on your vehicle. </p>
       <p>The braking system is made of the following parts:</p>
@@ -69,7 +74,7 @@
       <p>The <code>brakingSecurity</code> method estimates the responsiveness of your braking system.</p>
     </section>
     <hr>
-    <section class="main-section" id="steering_suspension">
+    <section id="steering_suspension" class="main-section">
       <header class="header-section"><b>Steering & Suspension</b></header>
       <p>The steering and suspension helps improve the ride and handling of the vehicle.</p>
       <p>The steering and suspension is made up of the following parts:</p>
@@ -81,6 +86,11 @@
       <p>The <code>steeringSuspensionEase</code> method estimates the smoothness of your steering and suspension.</p>
     </section>
   </main>
+          </div>
+      </div>
+    </div>
+   
+  
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>

@@ -4,6 +4,11 @@
     }
   }
 
+#navHeader{
+    color: white;
+    font-weight: 700;
+}
+
 code {
     font-family: Consolas,"courier new";
     color: crimson;
@@ -18,12 +23,13 @@ body {
 #main-doc{
     text-align: center;
     background-color: azure;
-    margin-top: 70px;
+ 
 }
 
 .header-section{
     font-size: large;
     font-style: oblique;
+    background-color: darkgray;
 }
 
 hr{
